@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title>Jukeboxd</title>
+    <meta charset="utf-8" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    /> 
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+<!-- google font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link href="https://db.onlinewebfonts.com/c/105007d99d9df64c50cc24d696d79555?family=Graphik+Web+Regular+Regular" rel="stylesheet">
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- favicon -->
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="immagini/favicon-32x32.png">
+    
+    
+    
+  </head>
+
+  <body class="container-fluid homepage albumpage">
+    <!-- HEADER -->
+    <header>
+      <div class="menu-bar">
+        <div class="container row justify-content-between">
+          <div class="img-container">
+            <a href="index.html">
+              <img src="immagini\Logo Jukeboxd Orizzontale_V1.png" alt="" class="img-fluid jbxd-logo">
+
+            </a>
+          </div>
+          
+          <nav class="col-9 position-absolute">
+            <!-- lista header -->
+            <ul>
+              <!-- menu a tendina -->
+              <li>
+                <div class="dropdown fw-bold">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    ROSA_POMPELMO
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="index.html">Home</a>
+                    <a class="dropdown-item" href="Profile.html">Profile</a>
+                    <a class="dropdown-item" href="#">Music</a>
+                    <a class="dropdown-item" href="#">Diary</a>
+                    <a class="dropdown-item" href="#">Reviews</a>
+                    <a class="dropdown-item" href="#">Want to listen</a>
+                    <a class="dropdown-item" href="#">Playlist</a>
+                  </div>
+                </div>
+              </li>
+              <li><a class="whitelink nounderline" href="#section-music">Music</a></li>
+              <li><a class="whitelink nounderline" href="#section-news">News</a></li>
+              <li><a class="whitelink nounderline" href="#section-review">Review</a></li>
+              <li><a class="whitelink nounderline" href="about.html">About</a></li>
+
+              
+              <li><input class="search" type="text" placeholder="Search" /></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="menu-bar">
+
+        <!-- jumbotron -->
+        <div class="jumbo">
+            <img src="immagini/lana-jumbo.jpg" alt="">
+            
+        </div>
+
+        <!-- album section -->
+        <div class="row mt-4">
+            <!-- album image -->
+            <div class="col-3">
+                <div class="card">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img src="immagini\ultraviolence.ldr.jpg" class="img-fluid rounded " style="width: 100%;"/>
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- album description -->
+            <div class="col-6">
+                <div class="pl-3 mb-5">
+                <h2 class="d-inline mr-2">Ultraviolence</h2> 
+                <span class="activity-text font-weight-light">2014</span>
+                <div class="mt-3">
+                    <span class="mt-3">By:</span><span class="font-weight-light activity-text mt-3"> Lana del Rey</span>
+                </div>
+                <p class="mt-5 activity-text font-weight-light description-album">Ultraviolence is the third studio album by American singer-songwriter Lana Del Rey, released on June 13, 2014. 
+                    The sound of Ultraviolence was characterized as psychedelic rock, dream pop, desert rock with some elements of blues rock, soft rock and indie rock.
+                    The first song on the album, "Cruel World", is the longest song on the album, clocking in at six minutes and thirty-nine seconds. A break-up song, with 70s-style rock guitars and reverb, Del Rey considers this as her favorite track off the album.
+                </p>
+                </div>
+
+                <!-- Reviews -->
+                <div class="container reviews-comments">
+                  <p id="section-music" class="mt-5 activity-text font-weight-light">POPULAR REVIEW</p>
+                  <hr>
+                   <!-- comments -->
+                   <div class="row">
+                    <div class="col">
+                        <div class="media g-mb-30 media-comment">
+                          <img class="d-flex g-width-50 g-height-50 rounded-circle mt-4 g-mr-15" src="immagini\pierrews-profile.jpg" alt="Image Description">
+                          <div class="media-body u-shadow-v18 g-bg-secondary g-pa-30">
+                              <div class="g-mb-15">
+                                <h5 class="h5 g-color-gray-dark-v1 mb-0">Pierre.ws</h5>
+                                <span class="g-color-gray-dark-v4 g-font-size-12">5 days ago</span>
+                              </div>
+                        
+                              <p class="activity-text font-weight-light">really good!</p>
+                        
+                              <ul class="list-inline d-sm-flex my-0">
+                                <li class="list-inline-item g-mr-20">
+                                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                                    <i class="fa fa-thumbs-up g-pos-rel g-top-1 g-mr-3"></i>
+                                    178
+                                  </a>
+                                </li>
+                                <li class="list-inline-item g-mr-20">
+                                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                                    <i class="fa fa-thumbs-down g-pos-rel g-top-1 g-mr-3"></i>
+                                    34
+                                  </a>
+                                </li>
+                                <li class="list-inline-item ml-auto">
+                                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                                    <i class="fa fa-reply g-pos-rel g-top-1 g-mr-3"></i>
+                                    Reply
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="media g-mb-30 media-comment">
+                            <img class="d-flex g-width-50 g-height-50 rounded-circle mt-4 g-mr-15" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Image Description">
+                            <div class="media-body u-shadow-v18 g-bg-secondary g-pa-30">
+                              <div class="g-mb-15">
+                                <h5 class="h5 g-color-gray-dark-v1 mb-0">giamp_z</h5>
+                                <span class="g-color-gray-dark-v4 g-font-size-12">2 days ago</span>
+                              </div>
+                        
+                              <p class="activity-text font-weight-light">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
+                                felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                        
+                              <ul class="list-inline d-sm-flex my-0">
+                                <li class="list-inline-item g-mr-20">
+                                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                                    <i class="fa fa-thumbs-up g-pos-rel g-top-1 g-mr-3"></i>
+                                    98
+                                  </a>
+                                </li>
+                                <li class="list-inline-item g-mr-20">
+                                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                                    <i class="fa fa-thumbs-down g-pos-rel g-top-1 g-mr-3"></i>
+                                    22
+                                  </a>
+                                </li>
+                                <li class="list-inline-item ml-auto">
+                                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                                    <i class="fa fa-reply g-pos-rel g-top-1 g-mr-3"></i>
+                                    Reply
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                </div>
+
+                <div class="container reviews-comments">
+                  <p id="section-music" class="mt-5 activity-text font-weight-light">SIMILAR VIBES MOVIES</p>
+                  <hr>
+                  <p class="activity-text font-weight-light">
+                    If you like this album you will love these movies
+                  </p>
+                  
+                  <!-- -------------------- -->
+                <div class="row">
+                  <!-- card film -->
+                  <div class="col-lg-3 col-md-6 mb-2 mt-3">
+                      <div class="card">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                              <a href="https://letterboxd.com/film/call-me-by-your-name/"><img src="immagini/callmebyyourname.jpg" class="img-fluid rounded" /></a>
+                              <a href="">
+                                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <!---------------------->
+                  <!-- card film -->
+                  <div class="col-lg-3 col-md-6 mb-2 mt-3">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <a href="https://letterboxd.com/film/lolita/"><img src="immagini/lolitakubric.jpg" class="img-fluid rounded" /></a>
+                            <a href="">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!---------------------->
+                <!-- card film -->
+                <div class="col-lg-3 col-md-6 mb-2 mt-3">
+                  <div class="card">
+                      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <a href="https://letterboxd.com/film/the-great-gatsby-2013/"><img src="immagini/greatgatsby.jpg" class="img-fluid rounded" /></a>
+                          <a href="">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <!---------------------->
+              <!-- card film -->
+              <div class="col-lg-3 col-md-6 mb-2 mt-3">
+                <div class="card">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <a href="https://letterboxd.com/film/the-dreamers/"><img src="immagini/THE-DREAMERS.COVER_.jpg" class="img-fluid rounded" /></a>
+                        <a href="">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!---------------------->
+                </div>
+
+                </div>
+            </div>
+            <div class="col-3 album-rate">
+              <div class="text-center d-flex d-inline justify-content-around mt-3">
+                <div>
+                  <i class="fa-solid fa-headphones rating-icon"></i>
+                  <p class="rating-word">Listen</p>
+                </div>
+                <div>
+                  <i class="fa-regular fa-heart rating-icon"></i>
+                  <p class="rating-word">Like</p>
+                </div>
+                <div>
+                  <i class="fa-regular fa-clock rating-icon"></i>
+                  <p class="rating-word">Want to <br> Listen</p>
+                </div>
+                
+              </div>
+              <hr class="mt-0">
+              <!-- rating stars --> 
+              <div class="container">
+                <div class="star">
+                  <a href="#" class="bi-star-fill"></a>
+                  <a href="#" class="bi-star-fill"></a>
+                  <a href="#" class="bi-star-fill"></a>
+                  <a href="#" class="bi-star-fill"></a>
+                  <a href="#" class="bi-star-fill"></a>
+                </div>
+              </div>
+              <hr class="mt-2">
+              <div class="container rev-log">
+                <p class="text-center activity-text">Review or Log</p>
+              </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+  <section class="footer-container">
+    <div class="container my-5">
+
+      <footer class="text-center text-lg-start" style="background-color: #2c3440;">
+        <div class="container d-flex justify-content-center py-4">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #a7a7a7;">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #a7a7a7;">
+            <i class="fab fa-youtube"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #a7a7a7;">
+            <i class="fab fa-instagram"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #a7a7a7;">
+            <i class="fab fa-twitter"></i>
+          </button>
+        </div>
+        
+        <p>Website realized by Chiara Crusco</p>
+        
+      </footer>
+      
+      
+    </div>
+    <!-- Copyright -->
+    <div class=" Copyright-section text-white p-3">
+      © 2023 Copyright:
+      <a class="text-white" href="#">Jukeboxd.com</a>
+    </div>
+    <!-- Copyright -->
+  </section>
+
+  <!-- link js -->
+  <script src="script.js"></script>
+  <!-- rating.js file -->
+<script src="js/addons/rating.js"></script>
+</body>
+</html>

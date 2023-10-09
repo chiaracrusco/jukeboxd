@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Graphik Web Regular Regular";
+    font-weight: 400;
+  }
+
+html {
+    background: linear-gradient(180deg, rgb(38, 49, 58)1%, rgb(22, 26, 30) 10.27%, rgb(22, 26, 30) 41.67%, rgb(22, 26, 30) 65.63%, #141517 100%);
+    }
+
+
+.whitelink {
+    color: #a7a7a7;
+}
+
+.nounderline {
+    text-decoration: none;
+}
+
+a:hover { 
+   color: #ffffff;
+   /* background-color: #161a1e; */
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(22, 26, 30) 
+}
+
+/* menu navigazione */
+
+.img-container {
+    width: 190px;
+    padding-top: 22px;
+    z-index: 4;
+
+}
+
+.jbxd-logo {
+    width: 100%;
+    height: auto;
+}
+
+.menu-bar{
+    max-width: 70%;
+    margin-left: 15%;
+    
+
+}
+
+.menu-bar h2 {
+    font-size: x-large;
+    text-align: center;
+}
+
+header.search::before {
+    content: "\f002"; 
+  }
+
+h1 { 
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px
+
+}
+
+nav ul li {
+    display:inline-block; 
+    padding-top: 20px;
+    padding-left: 10px; 
+    background-color: rgb(22, 26, 30);
+}
+
+nav {
+    text-align: right
+}
+/* dropdown menu */
+
+.dropdown-toggle {
+    background-color: rgb(22, 26, 30);
+    border-color: rgb(22, 26, 30);
+
+}
+
+.dropdown-menu {
+    background-color: #cde;
+    min-width: 11rem;
+    padding: 0px;
+}
+
+.dropdown-item:hover {
+    background-color: #89a;
+    color: white;
+}
+
+/* barra di ricerca */
+
+.search {
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 30px;
+    width: 120px;
+    padding-left: 10px;
+    outline: 0;
+    background-color: #f5f5f5;
+  }
+
+
+
+  /* BODY */
+
+body, section {
+    color: #fff;
+    background: none;
+}
+
+.activity-text {
+    color: #a7a7a7;
+}
+
+.menu-bar hr {
+    margin-top: -12px;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(167 167 167);
+}
+
+/* img { 
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+        border: 1px solid #ddd;
+        padding: 1px;
+        display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+} */
+
+/* Card */
+ 
+.card-body {
+
+    padding: 0.4em;
+    background-color: #456;
+}
+
+.card-body h5 {
+    font-size: 12px;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+section { 
+    display:inline-block; 
+    
+}
+
+.popular-activity {
+    margin-top: 100px;
+}
+
+.rating-star{
+    margin-top: 10px;
+    color: #667788;
+}
+
+.card img {
+    width: 100%;
+}
+
+/* latest news */
+
+.latest-news {
+    margin-top: 100px;
+}
+
+.latest-news img {
+    border: 0px ;
+}
+
+.latest-news .card-body {
+    border-radius: 0px;
+    margin-left: 0px;
+}
+
+.latest-news .card {
+    border: none;
+    flex-direction: row;
+}
+
+.latest-news .card-text {
+    color:  #a7a7a7;
+    font-style: oblique;
+    
+
+}
+
+.img-news-container {
+    object-fit: contain;
+}
+
+.img-news-container img{
+    width: 100%;
+    height: 100%;
+    max-width: fit-content;
+}
+
+.card-text a {
+    font-weight: bold;
+    color: inherit; /* blue colors for links too */
+text-decoration: inherit;
+}
+
+/* Reviews section */
+
+.friend-reviews {
+    margin-top: 150px;
+}
+
+.friend-reviews .card {
+
+    border: none;
+}
+
+.friend-reviews .card-body {
+
+    background-color: #161a1e;
+}
+
+.friend-reviews  .card-footer {
+    background-color: rgb(22 26 30);
+     }
+
+ .footer-container {
+    margin-top: 200px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    background-color: #2c3440;
+    }
+
+    .Copyright-section {
+        width: 100%;
+        background-color: rgb(20 22 25);
+    }
+
+    footer .btn-primary {
+        border-color:rgb(20 22 25) ;
+    }
+
+    footer .btn-primary:hover {
+        border-color:rgb(20 22 25) ;
+    }
+
+
+    /* PROFILE PAGE */
+    
+    .banner-profile {
+        background-image: url('../immagini/banner-profile-vinyl.jpg');
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .profile-pic{
+        margin-top: 5rem;
+        margin-left: 32px;
+    }
+
+    .name-profile {
+        margin-top: 142px;
+    margin-left: 12px;
+    }
+
+    .button-profile i {
+        color: #eef7ff;
+    }
+
+    .button-profile:hover i {
+        color: black;
+    }
+
+    .button-profile {
+        background-color: #567;
+    }
+
+    .prof-color{ 
+        background-color: #456;
+    }
+
+    .menu-bar-prof{
+        max-width: 70%;
+        margin-left: 5%;
+        
+    
+    }
+
+    /* Pointer event click */
+
+    .homepage .card {
+        cursor: pointer;
+    }
+
+    .pointer-click {
+        cursor: pointer;
+    }
+
+    /* ALBUM PAGE */
+
+    .jumbo {
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+        display: inline-block;
+        /* test */
+        
+    }
+
+    .jumbo::before {
+        content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(left, rgb(21 26 30) 7%, rgba(255, 255, 255, 0) 49%, rgb(21 26 30) 93%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(7%, rgb(21 26 30)), color-stop(49%, rgba(255, 255, 255, 0)), color-stop(93%, rgb(21 26 30)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgb(21 26 30) 7%, rgba(255, 255, 255, 0) 49%, rgb(21 26 30) 93%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgb(21 26 30) 7%, rgba(255, 255, 255, 0) 49%, rgb(21 26 30) 93%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgb(21 26 30) 7%, rgba(255, 255, 255, 0) 49%, rgb(21 26 30) 93%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgb(21 26 30) 7%, rgba(255, 255, 255, 0) 49%, rgbargb(21 26 30) 93%);
+  /* W3C */
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
+  /* IE6-9 */
+    }
+
+    .jumbo img {
+        border-radius: 35px;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .description-album{
+        width: 90%;
+    }
+
+    .albumpage {
+        background-color: #161a1e;
+    }
+
+    .album-rate {
+        width: 100%;
+        height: 300px;
+        background-color: #456;
+    }
+
+    .rating-icon {
+        color: #a7a7a7;
+        font-size: 33px;
+    }
+
+    .rating-word{
+        font-size: 13px;
+        color: #a7a7a7;
+    }
+
+    .rating-icon:hover{
+        color: #eef7ff;
+        cursor: pointer;
+    }
+
+    .container .star {
+        display: flex;
+        grid-gap: 10px;
+        justify-content: center;
+    }
+
+    .container .star a {
+        color: #a7a7a7;
+        font-size: 25px;
+    }
+
+    .container .star a.active {
+        color: #00c030;
+    }
+
+    .a-hover {
+        background-color: #456;
+    }
+
+    .rev-log {
+        cursor: pointer;
+
+    }
+
+    .rev-log:hover{
+        background-color: rgb(53, 66, 79);
+    }
+
+    .rev-log p:hover {
+        color: white;
+    }
+
+    /* comments */
+    @media (min-width: 0) {
+        .g-mr-15 {
+            margin-right: 1.07143rem !important;
+        }
+    }
+    @media (min-width: 0){
+        .g-mt-3 {
+            margin-top: 0.21429rem !important;
+        }
+    }
+    
+    .g-height-50 {
+        height: 50px;
+    }
+    
+    .g-width-50 {
+        width: 50px !important;
+    }
+    
+    @media (min-width: 0){
+        .g-pa-30 {
+            padding: 2.14286rem !important;
+        }
+    }
+    
+    /* .g-bg-secondary {
+        background-color: #fafafa !important;
+    } */
+    
+    .u-shadow-v18 {
+        box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.15);
+    }
+    
+    .g-color-gray-dark-v4 {
+        color: #777 !important;
+    }
+    
+    .g-font-size-12 {
+        font-size: 0.85714rem !important;
+    }
+    
+    .media-comment {
+        margin-top:20px
+    }
+
+    .reviews-comments {
+        margin-top: 100px;
+    }
+
+    

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title>Jukeboxd</title>
+    <meta charset="utf-8" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    /> 
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    
+<!-- google font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link href="https://db.onlinewebfonts.com/c/105007d99d9df64c50cc24d696d79555?family=Graphik+Web+Regular+Regular" rel="stylesheet">
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    
+  </head>
+
+  <body class="container-fluid">
+    <!-- Header sezione Navbar -->
+    <header>
+      <div class="menu-bar">
+        <div class="container row justify-content-between">
+          <div class="img-container">
+            <a href="index.html">
+              <img src="immagini\Logo Jukeboxd Orizzontale_V1.png" alt="" class="img-fluid jbxd-logo">
+
+            </a>          </div>
+          
+          <nav class="col-9 position-absolute">
+            <!-- lista header -->
+            <ul>
+              <!-- menu a tendina -->
+              <li>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    ROSA_POMPELMO
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="index.html">Home</a>
+                    <a class="dropdown-item" href="profile.html">Profile</a>
+                    <a class="dropdown-item" href="#">Music</a>
+                    <a class="dropdown-item" href="#">Diary</a>
+                    <a class="dropdown-item" href="#">Reviews</a>
+                    <a class="dropdown-item" href="#">Want to listen</a>
+                    <a class="dropdown-item" href="#">Playlist</a>
+                  </div>
+                </div>
+              </li>
+              <li><a class="whitelink nounderline" href="">Music</a></li>
+              <li><a class="whitelink nounderline" href="">News</a></li>
+              <li><a class="whitelink nounderline" href="">Review</a></li>
+              <li><a class="whitelink nounderline" href="about.html">About</a></li>
+
+              
+              <li><input class="search" type="text" placeholder="Search" /></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="menu-bar">
+      
+      <!-- profile card -->
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col ">
+            <div class="card pe-none prof-color">
+              <div class="rounded-top text-white d-flex flex-row banner-profile" style=" height:200px;">
+                <div class="ms-4 d-flex flex-column profile-pic" style="width: 150px;">
+                  <img src="immagini\photo_2023-10-06_20-57-49.jpg"
+                    alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2"
+                    style="width: 150px; z-index: 1">
+                  <button type="button" class="btn btn-outline-light button-profile" data-mdb-ripple-color="light"
+                    style="z-index: 1;">
+                    <i class="fa-solid fa-pen"></i> Edit profile
+                  </button>
+                </div>
+                <div class="ms-3 name-profile">
+                  <h5>Rosa_pompelmo</h5>
+                  <p>Italy</p>
+                </div>
+              </div>
+              <div class="p-4 text-black" style="background-color: rgb(68 85 102)">
+                <div class="d-flex justify-content-end text-center py-1">
+                  <div class="mr-4 pointer-click">
+                    <p class="mb-1 h5">153</p>
+                    <p class="font-weight-bold medium  mb-0">Albums</p>
+                  </div>
+                  <div class="mr-4 pointer-click">
+                    <p class="mb-1 h5">18</p>
+                    <p class="font-weight-bold medium  mb-0">Playlist</p>
+                  </div>
+                  <div class="px-3 mr-4 pointer-click">
+                    <p class="mb-1 h5">1026</p>
+                    <p class="font-weight-bold medium  mb-0">Followers</p>
+                  </div>
+                  <div class="pointer-click">
+                    <p class="mb-1 h5">478</p>
+                    <p class="font-weight-bold medium  mb-0">Following</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Favorite Albums -->
+              <div class="menu-bar-prof">
+                <p id="section-music" class="mt-5 activity-text font-weight-light">FAVORITE ALBUMS</p>
+                
+      <hr>
+      <!-- attività ascolti -->
+      <div class="row d-flex justify-content-around">
+        <!-- card disco -->
+        <div class="col-lg-3 col-md-6 mb-2">
+            <div class="card pointer-click">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <a href="album.html"><img src="immagini\ultraviolence.ldr.jpg" class="img-fluid rounded" /></a>
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="album-rating">
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+            </div>
+        </div>
+        <!---------------------->
+    
+        <div class="col-lg-3 col-md-6 mb-2">
+            <div class="card pointer-click">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="immagini\1000_gec_album.jpg" class="img-fluid rounded" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="album-rating">
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-md-6 mb-2">
+            <div class="card pointer-click">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img class="img-fluid rounded" src="immagini\The_Dark_Side_of_the_Moon_Cover.svg.png" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+              
+            </div>
+            <div class="album-rating">
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star-half rating-star"></i>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-2">
+            <div class="card pointer-click">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="immagini\bloom.beachhouse.png" class="img-fluid rounded" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="album-rating">
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+            </div>
+        </div>
+    
+        </div>
+        </div>
+        
+        <!-- recent activity -->
+
+        <div class="menu-bar-prof " >
+          <div class="row justify-content-between">
+            <div class="col"><p id="section-music" class="mt-5 activity-text font-weight-light">RECENT ACTIVITY</p>
+              </div>
+              <div class="col"><p class="text-right mt-5 activity-text font-weight-light pointer-click">All</p></div>
+          </div>
+  <hr>
+  <!-- attività ascolti -->
+  <div class="row d-flex justify-content-around">
+    <!-- card disco -->
+    <div class="col-lg-3 col-md-6 mb-2">
+        <div class="card pointer-click">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="immagini\ab67616d0000b2731106bbfbbc49692e49f3b580.jpg" class="img-fluid rounded" />
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+        </div>
+        <div class="album-rating">
+          <i class="fa-solid fa-star rating-star"></i>
+          <i class="fa-solid fa-star rating-star"></i>
+          <i class="fa-solid fa-star-half rating-star"></i>
+          
+        </div>
+    </div>
+    <!---------------------->
+
+    <div class="col-lg-3 col-md-6 mb-2">
+        <div class="card pointer-click">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="immagini\MGMT_-_Little_Dark_Age.png" class="img-fluid rounded" />
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+        </div>
+        <div class="album-rating">
+          <i class="fa-solid fa-star rating-star"></i>
+          <i class="fa-solid fa-star rating-star"></i>
+          <i class="fa-solid fa-star rating-star"></i>
+          
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-2">
+        <div class="card pointer-click">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img class="img-fluid rounded" src="immagini\Ramones_-_Ramones_cover.jpg" />
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+          
+        </div>
+        <div class="album-rating">
+          <i class="fa-solid fa-star rating-star"></i>
+          <i class="fa-solid fa-star rating-star"></i>
+          <i class="fa-solid fa-star rating-star"></i>
+          <i class="fa-solid fa-star-half rating-star"></i>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-2">
+        <div class="card pointer-click">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="immagini\Abbey-Road.jpeg" class="img-fluid rounded" />
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            
+        </div>
+        <div class="album-rating">
+          <i class="fa-solid fa-star rating-star"></i>
+          <i class="fa-solid fa-star rating-star"></i>
+          <i class="fa-solid fa-star rating-star"></i>
+          <i class="fa-solid fa-star rating-star"></i>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <!-- Playlist -->
+
+    <div class="menu-bar-prof " >
+      <div class="row justify-content-between">
+        <div class="col"><p id="section-music" class="mt-5 activity-text font-weight-light">PLAYLIST</p>
+          </div>
+          <div class="col"><p class="text-right mt-5 activity-text font-weight-light pointer-click">All</p></div>
+      </div>
+      <hr>
+<!-- attività ascolti -->
+<div class="row d-flex justify-content-around">
+<!-- card disco -->
+<div class="col-lg-3 col-md-6 mb-2">
+    <div class="card pointer-click">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src="immagini\ab67616d0000b2731106bbfbbc49692e49f3b580.jpg" class="img-fluid rounded" />
+            <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+        </div>
+    </div>
+</div>
+<!---------------------->
+
+<div class="col-lg-3 col-md-6 mb-2">
+    <div class="card pointer-click">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src="immagini\MGMT_-_Little_Dark_Age.png" class="img-fluid rounded" />
+            <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-2">
+    <div class="card pointer-click">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img class="img-fluid rounded" src="immagini\Ramones_-_Ramones_cover.jpg" />
+            <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+        </div>
+      
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 mb-2">
+    <div class="card pointer-click">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src="immagini\Abbey-Road.jpeg" class="img-fluid rounded" />
+            <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+</div>
+
+<!-- Want to Listen -->
+<!-- Playlist -->
+
+<div class="menu-bar-prof " >
+  <div class="row justify-content-between">
+    <div class="col"><p id="section-music" class="mt-5 activity-text font-weight-light">WANT TO LISTEN</p>
+      </div>
+      <div class="col"><p class="text-right mt-5 activity-text font-weight-light pointer-click">All</p></div>
+  </div>
+  <hr>
+<!-- attività ascolti -->
+<div class="row d-flex justify-content-around mb-5">
+<!-- card disco -->
+<div class="col-lg-3 col-md-6 mb-2">
+<div class="card pointer-click">
+    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+        <img src="immagini\ab67616d0000b2731106bbfbbc49692e49f3b580.jpg" class="img-fluid rounded" />
+        <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        </a>
+    </div>
+</div>
+</div>
+<!---------------------->
+
+<div class="col-lg-3 col-md-6 mb-2">
+<div class="card pointer-click">
+    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+        <img src="immagini\MGMT_-_Little_Dark_Age.png" class="img-fluid rounded" />
+        <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        </a>
+    </div>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-2">
+<div class="card pointer-click">
+    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+        <img class="img-fluid rounded" src="immagini\Ramones_-_Ramones_cover.jpg" />
+        <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        </a>
+    </div>
+  
+</div>
+</div>
+<div class="col-lg-3 col-md-6 mb-2">
+<div class="card pointer-click">
+    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+        <img src="immagini\Abbey-Road.jpeg" class="img-fluid rounded" />
+        <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        </a>
+    </div>
+    
+</div>
+</div>
+
+</div>
+</div>
+
+    
+    </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    
+  </body>
+
+  <!-- FOOTER -->
+  <section class="footer-container">
+    <div class="container my-5">
+
+      <footer class="text-center text-lg-start" style="background-color: #2c3440;">
+        <div class="container d-flex justify-content-center py-4">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #a7a7a7;">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #a7a7a7;">
+            <i class="fab fa-youtube"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #a7a7a7;">
+            <i class="fab fa-instagram"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #a7a7a7;">
+            <i class="fab fa-twitter"></i>
+          </button>
+        </div>
+        
+        <p>Website realized by Chiara Crusco</p>
+        
+      </footer>
+      
+      
+    </div>
+    <!-- Copyright -->
+    <div class=" Copyright-section text-white p-3">
+      © 2023 Copyright:
+      <a class="text-white" href="#">Jukeboxd.com</a>
+    </div>
+    <!-- Copyright -->
+  </section>
+</html>

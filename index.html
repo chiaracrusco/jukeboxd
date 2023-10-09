@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title>Jukeboxd</title>
+    <meta charset="utf-8" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    /> 
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!-- google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://db.onlinewebfonts.com/c/105007d99d9df64c50cc24d696d79555?family=Graphik+Web+Regular+Regular" rel="stylesheet">
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- favicon -->
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="immagini/favicon-32x32.png">
+    
+    
+    
+  </head>
+
+  <body class="container-fluid homepage">
+    <!-- Header sezione Navbar -->
+    <header>
+      <div class="menu-bar">
+        <div class="container row justify-content-between">
+          <div class="img-container">
+            <a href="index.html">
+              <img src="immagini\Logo Jukeboxd Orizzontale_V1.png" alt="" class="img-fluid jbxd-logo">
+
+            </a>
+          </div>
+          
+          <nav class="col-9" style="position: absolute;">
+            <!-- lista header -->
+            <ul>
+              <!-- menu a tendina -->
+              <li>
+                <div class="dropdown fw-bold">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    ROSA_POMPELMO
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="index.html">Home</a>
+                    <a class="dropdown-item" href="Profile.html">Profile</a>
+                    <a class="dropdown-item" href="#">Music</a>
+                    <a class="dropdown-item" href="#">Diary</a>
+                    <a class="dropdown-item" href="#">Reviews</a>
+                    <a class="dropdown-item" href="#">Want to listen</a>
+                    <a class="dropdown-item" href="#">Playlist</a>
+                  </div>
+                </div>
+              </li>
+              <li><a class="whitelink nounderline" href="#section-music">Music</a></li>
+              <li><a class="whitelink nounderline" href="#section-news">News</a></li>
+              <li><a class="whitelink nounderline" href="#section-review">Review</a></li>
+              <li><a class="whitelink nounderline" href="about.html">About</a></li>
+
+              
+              <li><input class="search" type="text" placeholder="Search" /></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Body sezione dischi -->
+    <main>
+    <div class="menu-bar">
+      <h2 class="ml-4 mt-5">
+        Welcome back,
+        <a class="whitelink" href="Profile.html">rosa_pompelmo</a>. Here’s what
+        your friends have been listening…
+      </h2>
+
+      <!-- Friends Activity -->
+      <p id="section-music" class="mt-5 activity-text font-weight-light">NEW FROM FRIENDS</p>
+      <hr>
+      <!-- attività ascolti -->
+      <div class="row">
+        <!-- card disco -->
+        <div class="col-lg-2 col-md-6 mb-2">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <a href="album.html"><img src="immagini\ultraviolence.ldr.jpg" class="img-fluid rounded" /></a>
+                    <a href="">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Pierre.ws</h5>
+    
+                </div>
+            </div>
+            <div class="album-rating">
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star-half rating-star"></i>
+            </div>
+        </div>
+        <!---------------------->
+    
+        <div class="col-lg-2 col-md-6 mb-2">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="immagini\1000_gec_album.jpg" class="img-fluid rounded" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">rosa_pompelmo</h5>
+    
+                </div>
+            </div>
+            <div class="album-rating">
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star-half rating-star"></i>
+            </div>
+        </div>
+    
+        <div class="col-lg-2 col-md-6 mb-2">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="immagini\61XGRcPbr4L._UF1000,1000_QL80_.jpg" class="img-fluid rounded" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Giampz</h5>
+    
+                </div>
+            </div>
+            <div class="album-rating">
+              <i class="fa-solid fa-star-half rating-star"></i>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-2">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="immagini\mazzy-star.jpg" class="img-fluid rounded" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Necledis</h5>
+    
+                </div>
+            </div>
+            <div class="album-rating">
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star-half rating-star"></i>
+            </div>
+        </div>
+    
+        <div class="col-lg-2 col-md-6 mb-2">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="immagini/sweet75.jpg" class="img-fluid rounded" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Harvard</h5>
+    
+                </div>
+
+            </div>
+            <div class="album-rating">
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star-half rating-star"></i>
+            </div>
+        </div>
+    
+        <div class="col-lg-2 col-md-6 mb-2">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="immagini\The_Dark_Side_of_the_Moon_Cover.svg.png" class="img-fluid rounded" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Florenz</h5>
+    
+                </div>
+            </div>
+            <div class="album-rating">
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              <i class="fa-solid fa-star rating-star"></i>
+              
+            </div>
+        </div>
+    </div>
+    <!-- end friend activity -->
+    <!-- Popular activity -->
+    <div class="popular-activity">
+    <p class="mt-5 activity-text font-weight-light">POPULAR WITH FRIENDS</p>
+      <hr>
+      <!-- attività ascolti -->
+      <div class="row">
+        <!-- card disco -->
+        <div class="col-lg-2 col-md-6 mb-2">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="immagini\12872_medium.jpg" class="img-fluid rounded" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!---------------------->
+    
+        <div class="col-lg-2 col-md-6 mb-2">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="immagini\being-so-normal.jpg" class="img-fluid rounded" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-2 col-md-6 mb-2">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="immagini\goo.jpg" class="img-fluid rounded" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-2">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="immagini\neutral-milk-hotel.jpg" class="img-fluid rounded" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-2 col-md-6 mb-2">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="immagini\violent-femmes.jpg" class="img-fluid rounded" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-2 col-md-6 mb-2">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="immagini\sonic-youth.jpg" class="img-fluid rounded" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+<!-- Latest News -->
+<div id="section-news" class="latest-news">
+  <p  class="mt-5 activity-text font-weight-light">LATEST NEWS</p>
+    <hr>
+
+  <div class="card row mr-0 ml-0">
+    <div class="img-news-container col-4 pl-0 pr-0">
+      <img class="card-img-top" src="immagini\230808-beyonce-mn-0600-8fa0d2.jpeg" alt="Card image cap">
+    </div>
+      <div class="card-body col-8" style="background-color: #202830;">
+          <h3 class="p-2">Beyoncé announces new film</h3>
+        <p class="card-text p-2 pr-5">Get ready, Beyhive: Beyoncé just revealed that a movie based on her Renaissance World Tour will hit theaters in December.
+
+          “Renaissance: A Film By Beyoncé” will take fans behind the scenes of her globetrotting tour.
+          <a class="" href="#">READ MORE</a>
+
+      </p>
+
+      </div>
+    </div>
+
+</div>
+
+
+  <!-- Reviews -->
+  <div id="section-review" class="friend-reviews">
+
+    <p class="mt-5 activity-text font-weight-light">POPULAR REVIEWS WITH FRIENDS</p>
+      <hr>
+      <div class="card-deck">
+
+        <!-- card review -->
+        <div class="card">
+          <img class="card-img-top" src="immagini\peach pit.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title font-weight-bold mt-2 mb-3">You and Your Friends</h4>
+            <p class="card-text">he newest album comes three years after the success of their debut record, Being So Normal. The 12-track release was produced by John Congleton (who’s worked with household indie bands, St. Vincent and Best Coast) to streamline the band’s “chewed bubblegum pop” sound with relatable lyrics about mundane situations. “You and Your Friends is a collection of songs about me, people that the band and I care about, and some of the old friends we’ve had over the years,” the band said in a statement. Like most sophomore albums, the band discusses falling in love, nostalgia, breakups, but this time with satirical lyrics and metaphors accompanied by soft vocals.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+            <hr class="mt-3">
+          </div>
+        </div>
+        <!------------------->
+
+        <div class="card">
+            <img class="card-img-top" src="immagini\neutral-milk-hotel.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title font-weight-bold mt-2 mb-3">In the Aeroplane over the Sea</h4>
+              <p class="card-text">In the Aeroplane Over the Sea is a personal album but not in the way you expect. It's not biography. It's a record of images, associations, and threads; no single word describes it so well as the beautiful and overused "kaleidoscope." It has the cracked logic of a dream, beginning with "King of Carrot Flowers Part 1".</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 16 mins ago</small>
+              <hr class="mt-3">
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="immagini\coltrane.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title font-weight-bold mt-2 mb-3">A Love Supreme</h4>
+              <p class="card-text">John Coltrane's magnum opus, "A Love Supreme" is a spiritually-themed suite of four interelated movements, making it in an abstract way more akin to a symphony than a traditional jazz album. Considered by many to be not only Coltrane's finest album, but the greatest jazz album of all time, this is a record that must be listened to repeatedly, which is something that will be no chore because once you've heard it, you won't just want to listen to it over and over again for the rest of your life, you'll have to - because unless you are completely without a soul, this is music.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 2 hours ago</small>
+              <hr class="mt-3">
+            </div>
+          </div>
+
+          
+        
+
+
+        
+      </div>
+  <!------end reviews-------->
+    </div>
+    </div>
+  </main>
+  <section class="footer-container">
+    <div class="container my-5">
+
+      <footer class="text-center text-lg-start" style="background-color: #2c3440;">
+        <div class="container d-flex justify-content-center py-4">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #a7a7a7;">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #a7a7a7;">
+            <i class="fab fa-youtube"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #a7a7a7;">
+            <i class="fab fa-instagram"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #a7a7a7;">
+            <i class="fab fa-twitter"></i>
+          </button>
+        </div>
+        
+        <p>Website realized by Chiara Crusco</p>
+        
+      </footer>
+      
+      
+    </div>
+    <!-- Copyright -->
+    <div class=" Copyright-section text-white p-3">
+      © 2023 Copyright:
+      <a class="text-white" href="#">Jukeboxd.com</a>
+    </div>
+    <!-- Copyright -->
+  </section>
+
+  <!-- link js -->
+  <script src="script.js"></script>
+</body>
+</html>
